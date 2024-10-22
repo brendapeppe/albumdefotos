@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffcdcd;
+    color: #310202;
+}
+
+header {
+    background-color: #e43333cb;
+    color: #ffcdcd;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #ffcdcd;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 16px;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #6e010191;
+    border-radius: 10px;
+}
+
+h1 {
+    font: 2.5em;
+    margin-top: 15px;
+    font-weight: 650;
+    font-family: "Yatra One", system-ui;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 15px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.photo-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-item.tall{
+    grid-row: span 2;
+}
+
+.photo-item.wide{
+    grid-column: span 2;
+}
+
+footer{
+    background-color: #e43333cb;
+    padding: 10px;
+}
+
+footer p{
+    color: #ffcdcd;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
